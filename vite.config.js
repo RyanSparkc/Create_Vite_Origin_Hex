@@ -31,6 +31,10 @@ export default defineConfig({
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
+  css: {
+    // 增加 source map
+    devSourcemap: true,
+  },
   server: {
     // 啟動 server 時預設開啟的頁面
     open: 'pages/index.html',
@@ -41,7 +45,10 @@ export default defineConfig({
         glob
           .sync('pages/**/*.html')
           .map((file) => [
-            path.relative('pages', file.slice(0, file.length - path.extname(file).length)),
+            path.relative(
+              'pages',
+              file.slice(0, file.length - path.extname(file).length)
+            ),
             fileURLToPath(new URL(file, import.meta.url)),
           ])
       ),
