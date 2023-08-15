@@ -4,6 +4,8 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { glob } from 'glob';
 
+import inject from '@rollup/plugin-inject';
+
 import liveReload from 'vite-plugin-live-reload';
 
 function moveOutputPlugin() {
@@ -25,11 +27,16 @@ function moveOutputPlugin() {
 export default defineConfig({
   // base 的寫法：
   // base: '/Repository 的名稱/'
-  base: '/web-layout-training-vite/',
+  // base: '/web-layout-training-vite/',
   plugins: [
     liveReload(['./layout/**/*.ejs', './pages/**/*.ejs', './pages/**/*.html']),
     ViteEjsPlugin(),
     moveOutputPlugin(),
+    inject({
+      $: 'jquery', // 这里会自动载入 node_modules 中的 jquery
+      jQuery: 'jquery',
+      'windows.jQuery': 'jquery',
+    }),
   ],
   css: {
     // 增加 source map
