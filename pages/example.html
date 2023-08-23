@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>後台系統</title>
+  <%- include('./layout/font') -%>
+</head>
+
+<body>
+  <div class="wrapper">
+      <main class="main container-fluid">
+        <div class="row">
+          <div class="col">
+            <%- include('./layout/navbar') -%>
+
+              <!-- index page content statt -->
+
+              <section class="assignment-section pr-32 ps-32 pb-32 pt-4">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="all-btn">
+                      <ul class="navbar-nav d-flex">
+
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            All（4）
+                            <span class="material-icons text-success"> expand_more </span>
+                          </a>
+
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="all-list list-group bg-secondary border-primary">
+                      <a href="#" class="border-primary text-black list-group-item list-group-item-action active">
+                        <p>Chapter Assignment 2 <span>4 hrs ago</span></p>
+                        <p class="title">Please check this file… <span class="font-weight-normal">Emily Wang</span></p>
+                      </a>
+                      <a href="#" class="border-primary list-group-item list-group-item-action">
+                        <p>Chapter Assignment 1<span>12 hrs ago</span></p>
+                        <p class="title">My Homework<span class="font-weight-normal">David Xu</span></p>
+                      </a>
+                      <a href="#" class="border-primary list-group-item list-group-item-action">
+                        <p>Final Assignment<span>18 hrs ago</span></p>
+                        <p class="title">Have a problem with this…<span class="font-weight-normal">Tony Wei</span></p>
+                      </a>
+                      <a href="#" class="border-primary list-group-item list-group-item-action">
+                        <p>Final Assignment<span>19 hrs ago</span></p>
+                        <p class="title">Did I do it right?<span class="font-weight-normal">Christina Lin</span></p>
+                      </a>
+                    </div>
+
+                  </div>
+                  <div class="col-8 position-relative">
+                    <div class="comments">
+                      2 comments
+                    </div>
+
+
+                    <div class="control-list">
+                      <div class="arror-group d-flex me-auto">
+                        <a href="#"><span class="material-icons text-dark"> keyboard_arrow_left </span></a>
+                        <a href="#"><span class="material-icons  text-dark"> keyboard_arrow_right </span></a>
+                      </div>
+                      <a href="#" class="btn btn-outline-success">Mark as read</a>
+                      <a href="#" class="btn btn-success btn-rep">Reply</a>
+                    </div>
+                  </div>
+                </div>
+
+              </section>
+
+              <!-- index page content end -->
+          </div>
+        </div>
+      </main>
+  </div>
+
+  <!-- <%- include('./layout/footer'); -%> -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
+  <script type="module" src="../main.js"></script>
+</body>
+
+</html>

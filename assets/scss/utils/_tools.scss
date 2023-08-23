@@ -1,0 +1,43 @@
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+// 文字產生 ….
+// 必須要先有寬度 才能使用這語法
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sup-text{
+  font-size: 14px;
+  @include media-breakpoint-up(md) {
+      font-size: 14px;
+  }
+  @include media-breakpoint-up(lg) {
+      font-size: 16px;
+  }
+}
+
