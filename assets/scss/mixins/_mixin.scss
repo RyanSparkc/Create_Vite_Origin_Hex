@@ -49,3 +49,24 @@
 @mixin radial-gradient( $start-color: $primary, $end-color: $secondary, ) {
   background-image: radial-gradient(50% 50% at 50% 50%, $start-color 0%, $end-color 100%);
 }
+
+@mixin triangle {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 0 0 16px 16px;
+  border-color: $primary transparent;
+  border-style: solid;
+  bottom: 0;
+  right: 0;
+}
+
+@mixin btn-more-hover {
+  background-color: $primary;
+  color: $white;
+  border: 1px solid $black;
+  &:after {
+    border-color: $black transparent;
+  }
+}

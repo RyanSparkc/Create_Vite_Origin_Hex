@@ -15,6 +15,8 @@
   - images # 圖片放置處
   - scss # SCSS 的樣式放置處
   - layout # ejs 模板放置處
+  - 圖片連結 "../assets/images/picture.png" 
+  - css 連結位置 "../images/picture.png"
 
 - pages # 頁面放置處
 
