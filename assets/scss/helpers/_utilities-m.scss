@@ -1,0 +1,222 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "width":
+      map-merge(
+        map-get($utilities, "width"),
+        (
+          responsive: true,
+          values:
+            map-merge(
+              map-get(map-get($utilities, "width"), "values"),
+              (
+                "5" : 5%,
+                "10" : 10%,
+                "15" : 15%,
+                "20" : 20%,
+                "30" : 30%,
+                "35" : 35%,
+                "40" : 40%,
+                "45" : 45%,
+                "55" : 55%,
+                "60" : 60%,
+                "65" : 65%,
+                "70" : 70%,
+                "80" : 80%,
+                "85" : 85%,
+                "90" : 90%,
+                "95" : 95%,
+              )
+            ),
+        )
+      ),
+    "height":
+      map-merge(
+        map-get($utilities, "height"),
+        (
+          responsive: true,
+          values:
+            map-merge(
+              map-get(map-get($utilities, "height"), "values"),
+              (
+                0:0,
+                196:196px,
+                232:232px,
+              )
+            ),
+        )
+      ),
+    "color":
+      map-merge(
+        map-get($utilities, "color"),
+        (
+          responsive: true,
+          values:
+            map-merge(
+              map-get(map-get($utilities, "color"), "values"),
+              (
+                // "black-400": $black-400,
+              )
+            ),
+        )
+      ),
+    "background-color": (
+      property: background-color,
+      class: bg,
+      local-vars: (
+        "bg-opacity": 1
+      ),
+      values: map-merge(
+        $utilities-bg-colors,
+        (
+          // "secondary-light": $secondary-light,
+        )
+      )
+    ),
+    "position": (
+      responsive: true,  // *custom - position
+      property: position,
+      values: static relative absolute fixed sticky
+    ),
+    "top": (
+      responsive: true,  // *custom - top
+      property: top,
+      values: $position-values
+    ),
+    "bottom": (
+      responsive: true,  // *custom - bottom
+      property: bottom,
+      values: $position-values
+    ),
+    "start": (
+      responsive: true,  // *custom - start
+      property: left,
+      class: start,
+      values: $position-values
+    ),
+    "end": (
+      responsive: true,  // *custom - end
+      property: right,
+      class: end,
+      values: $position-values
+    ),
+    "border-top": (
+      responsive: true, // *custom - border-end
+      property: border-top,
+      class: border-top,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-end": (
+      responsive: true, // *custom - border-end
+      property: border-right,
+      class: border-end,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-bottom": (
+      responsive: true, // *custom - border-bottom
+      property: border-bottom,
+      values: (
+        null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
+        0: 0,
+      )
+    ),
+    "border-bottom-style": (
+      responsive: true,
+      property: border-bottom-style,
+      class: border-bottom,
+      values: none dotted inset double dashed,
+    ),
+    "translate-middle": (
+      responsive: true, // *custom - translate-middle
+      property: transform,
+      class: translate-middle,
+      values: (
+        null: translate(-50%, -50%),
+        x: translateX(-50%),
+        y: translateY(-50%),
+      )
+    ),
+    "font-size": (
+      responsive: true,    // *custom - font-size 
+      rfs: true,
+      property: font-size,
+      class: fs,
+       // values: map-merge($font-sizes, (auto: auto))  // *custom
+      values: $font-sizes  // *custom
+    ),
+    "letting-spacing": (
+      responsive: true,
+      print: true,
+      property: letter-spacing,
+      class: letter,
+      values: (
+        0: 0px,
+        4:  1.6px,
+        5:  2px,
+        6:  2.4px,
+        "s14":14px,
+        "s16":16px,
+        "s20":20px,
+        "s24":24px,
+        "s26":26px,
+        "s32":32px,
+        "s40":40px,
+        "s48":48px,
+        "s60":60px,
+        "s64":64px,
+        "s80":80px,
+        "s96":96px,
+        "s240":240px,
+        "s320":320px,
+        8:  3.2px,
+        10: 4px,
+        12: 4.8px,
+      ),
+    ),
+    "transition-none": (
+      responsive: false,
+      print: true,
+      property: transition,
+      class: transition,
+      values: none
+    ),
+    "word-spacing": (
+      responsive: true,
+      print: true,
+      property: word-spacing,
+      class: word,
+      values: (
+        1:24px,
+        2:32px
+      ),
+    ),
+    'object-position': (
+      responsive: true,
+      property: object-position,
+      class: object-position,
+      values: (
+        top: top,
+        bottom: bottom,
+      ),
+    ),
+    "overflow": (
+      property: overflow,
+      values: auto hidden visible scroll inherit,
+    ),
+    "overflow-x": (
+      property: overflow-x,
+      values: auto hidden visible scroll inherit,
+    ),
+    "overflow-y": (
+      property: overflow-y,
+      values: auto hidden visible scroll inherit,
+    ),
+  )
+);
+

@@ -1,0 +1,28 @@
+.main-container {
+  @include full {
+    max-width: 1760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.small-container {
+  @include pc {
+    max-width: 576px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  @include xl {
+    max-width: 768px;
+  }
+  @include xxl {
+    max-width: 960px;
+  }
+  @include full {
+    max-width: 1320px;
+  }
+}

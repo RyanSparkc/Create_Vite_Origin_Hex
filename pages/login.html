@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <%- include('./layout/meta') -%>
+    <%- include('./layout/font') -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+    <main class="contact register pt-32 pt-lg-35 pb-20 pb-md-40 min-vh-100">
+      <div class="container">
+        <div class="row gx-0">
+          <h2 class="col-auto text-white fs-10 fs-md-16 fw-bold letter-s40 letter-md-s64 mt-md-40">登入</h2>
+          <div class="col-12 col-md-4 offset-md-2 d-flex flex-column justify-content-center">
+            <img class="rotate-image flex-shrink-0 mb-6 mx-auto" src="../assets/images/circle.png" alt="rotate-image">
+            <h2 class="fs-8 text-white font-shrikhand mb-8 text-center">Template</h2>
+            <a href="#"
+              class="btn btn-outline-white rounded-pill d-flex justify-content-center align-items-center py-2 mb-4">
+              <img class="d-block me-2" src="../assets/images/apple 1.png" alt="Apple logo btn">
+              Continue with Apple
+            </a>
+            <a href="#"
+              class="btn btn-outline-white rounded-pill d-flex justify-content-center align-items-center py-2">
+              <img class="d-block me-2" src="../assets/images/google.png" alt="google logo btn">
+              Continue with Google
+            </a>
+            <p class="register-line text-white position-relative text-center my-6"> or </p>
+            <form action="">
+              <div class="form-floating mb-4 text-primary-700">
+                <input type="email" class="form-control" id="floatingEmail" placeholder="">
+                <label for="floatingEmail fa-md-5">Email</label>
+              </div>
+              <div class="form-floating mb-4 text-primary-700">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="">
+                <label for="floatingPassword fa-md-5">密碼</label>
+              </div>
+              <a href="#" class="btn btn-primary rounded-1 text-center py-2 px-4 w-100 mb-2 text-white">
+                <i class="material-symbols-outlined me-1 align-bottom">point_scan </i> 立即登入</a>
+              <p class="text-white text-end"><a href="#" class="link-white text-decoration-underline">忘記密碼</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

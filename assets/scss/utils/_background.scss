@@ -1,0 +1,21 @@
+// 背景
+// 線性漸層-水平
+.bg-linear-gradient-level{
+  background-image: linear-gradient(to right, #7000FF, #11002D);
+}
+// 線性漸層-垂直
+.bg-linear-gradient-vertical{
+  background-image: linear-gradient(to bottom, #7000FF, #11002D);
+}
+// 放射性漸層 淺色
+.bg-radial-gradient-light{
+  background:radial-gradient(circle at center,#000,#28085C);
+}
+// 放射性漸層 深色
+.bg-radial-gradient-dark{
+  background:radial-gradient(circle at center,#28085C,#000);
+}
+// 放射性漸層 深色2
+.bg-radial-gradient-dark-2{
+  background:radial-gradient(circle at center,#300871,#000);
+}

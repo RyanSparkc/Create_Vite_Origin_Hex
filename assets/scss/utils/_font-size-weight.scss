@@ -1,0 +1,30 @@
+.fsw-1{
+  @include font-set(40px, 48px)
+}
+
+.fsw-3{
+  @include font-set(28px, 33.6px)
+}
+
+.fsw-4{
+  @include font-set(24px, 28.8px)
+}
+
+.fsw-5{
+  @include font-set(20px, 24px)
+} 
+
+.fsw-5{
+  @include font-set(20px, 30px)
+}
+
+.fsw-6{
+  @include font-set(16px, 24px)
+}
+
+.title{
+  @include font-set(28px, 33.6px);
+  @include media-breakpoint-up(md) {
+    @include font-set(40px, 48px)
+  }
+}

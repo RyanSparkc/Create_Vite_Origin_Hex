@@ -1,0 +1,8 @@
+// 自定義按鈕顏色 - 好處是-不會產生多餘的css，只在自定義上上新增樣式
+.btn-custom-purple{
+  @include button-variant(#521945, #521945);
+}
+ 
+.btn-custom-outline-purple{
+  @include button-outline-variant(#521945);
+}

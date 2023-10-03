@@ -1,5 +1,24 @@
-# 網頁切版 Vite 原始建置版本
+
+# Template Vite Bootstrap 5.3.2 建置版本
  - [安裝流程](https://hackmd.io/V3v9hW9dTlOwFvVA6ycfLg?view)
+
+## Tools
+- 使用 Bootstrap 5.3.2、客製化部分樣式
+- SCSS
+- Vite 佈署
+- EJS 樣板
+- Swiper 輪播
+- Gsap 動畫(設定參考)
+
+## 資料夾結構
+- assets # 靜態資源放置處
+  - images # 圖片放置處
+  - scss # SCSS 的樣式放置處
+  - layout # ejs 模板放置處
+
+- pages # 頁面放置處
+
+- JavaScript 程式碼可寫在 main.js 檔案
 
 ## Node.js 版本
   - 專案的 Node.js 版本需為 v16 以上
@@ -14,15 +33,6 @@
 - `npm run build` - 執行編譯模式（不會開啟瀏覽器）
 - `npm run deploy` - 自動化部署
 
-## 資料夾結構
-  - assets # 靜態資源放置處
-    - images # 圖片放置處
-    - scss # SCSS 的樣式放置處
-
-  - layout # ejs 模板放置處
-  - pages # 頁面放置處
-
-- JavaScript 程式碼可寫在 main.js 檔案
 
 ### 注意事項
 - 已將 pages 資料夾內的 index.html 預設為首頁，建議不要任意修改 index.html 的檔案名稱
@@ -43,7 +53,3 @@ git add .
 git commit -m 'first commit'
 git branch -M main
 git remote add origin [GitHub Repositories Url]
-git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
-```
-
-3. 初始化完畢後，執行 `npm run deploy` 指令進行自動化部署

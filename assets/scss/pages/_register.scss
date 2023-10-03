@@ -1,0 +1,25 @@
+.register{
+  &-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &::before, &::after{
+      content:"";
+      display: block;
+      background-color: #828282;
+      height: 1px;
+      width: 45%;
+    }
+  }
+}
+
+.btn-modal-close{
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  &:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
+  }
+}

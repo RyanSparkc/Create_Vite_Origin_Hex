@@ -1,0 +1,51 @@
+// 置中
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 文字大小 行高 字重
+@mixin font-set($font-size: 1rem, $line-height: 1.5, $font-weight: 400){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+// 垂直(多行)文字截斷 ...
+// 連結 : https://stackoverflow.com/questions/33058004/applying-an-ellipsis-to-multiline-text/41137262#41137262
+@mixin text-vertical-truncate {
+  display: -webkit-box;
+  max-width: 200px;  // 寬度 : 自行設定
+  -webkit-line-clamp: 4;  // 列數 : 自行設定
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+};
+
+// 漸層 : https://codepen.io/RyanYD/pen/XWoNVRP
+@mixin linear-gradient($direction, $list) { 
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);  
+}
+
+// 水平方向的漸層
+@mixin gradient-x($start-color: $primary, $end-color: $secondary) {
+  background-image: linear-gradient(to right, $start-color, $end-color);
+}
+
+@mixin gradient-xl($start-color: $primary, $end-color: $secondary) {
+  background-image: linear-gradient(to left, $start-color, $end-color);
+}
+
+
+// 垂直方向的漸層
+@mixin gradient-y($start-color: $primary, $end-color: $secondary) {
+  background-image: linear-gradient(to bottom, $start-color, $end-color);
+}
+
+@mixin radial-gradient( $start-color: $primary, $end-color: $secondary, ) {
+  background-image: radial-gradient(50% 50% at 50% 50%, $start-color 0%, $end-color 100%);
+}

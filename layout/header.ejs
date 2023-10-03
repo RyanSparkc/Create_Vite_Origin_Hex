@@ -1,4 +1,59 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<div class="position-fixed w-100 z-10">
+  <div class="navbar-border position-absolute bg-white start-0 end-0 bottom-0"></div>
+  <nav class="navbar navbar-expand-lg bg-primary  py-3 py-lg-4 position-static position-lg-relative flex-nowrap flex-lg-wrap">
+    <div class="container">
+      <!-- logo -->
+      <a href="index.html" class="transition-none d-flex align-items-center font-italic text-white mb-0 fs-6 fs-lg-8 font-shrikhand">
+        Template
+      </a>
+      <div class="navbar-custom position-absolute position-lg-static start-0 end-0 flex-lg-grow-1">
+        <div class="collapse navbar-collapse navbar-bg" id="navbarSupportedContent">
+          <!-- 連結 -->
+          <ul class="navbar-nav me-auto mx-lg-auto mb-2 mb-lg-0 pt-6 pt-lg-0 row-gap-1 column-gap-lg-6 text-center">
+            <li class="nav-item">
+              <a class="nav-link align-text-bottom" aria-current="page" href="./products.html">產品</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-disabled="true">最新消息</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./faq.html" aria-disabled="true">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" aria-disabled="true">聯絡我們</a>
+            </li>
+          </ul>
+          <!-- 登入註冊區塊連結 -->
+          <ul class="navbar-nav pb-8 pb-lg-0 row-gap-1 column-gap-lg-4 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="./register.html">註冊</a>
+            </li>
+            <li class="nav-item me-lg-2">
+              <a class="nav-link" href="./login.html">登入</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+              <a href="#" class="nav-link btn rounded-1 text-black text-center bg-white py-2 px-4"  data-bs-toggle="modal" data-bs-target="#registerModal">
+                <i class="material-symbols-outlined me-1 align-bottom">point_scan </i> 訂閱</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 手機板按鈕 -->
+      <button class="navbar-toggler border-0 px-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <div class="icon-custom">
+          <span class="icon-line"></span>
+          <span class="icon-line"></span>
+          <span class="icon-line"></span>
+        </div>
+      </button>
+
+    </div>
+  </nav>
+</div>
+

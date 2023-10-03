@@ -5,22 +5,20 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>example</title>
+  <title></title>
+  <%- include('./layout/meta') -%>
   <%- include('./layout/font') -%>
 </head>
 
 <body>
-  <div class="wrapper">
-      <%- include('./layout/navbar') -%>
-      <main class="main container-fluid">
-        <p>main</p>
+  <%- include('./layout/header'); -%>
 
+  <main class="contact pt-32 pt-lg-40 min-vh-100">
 
-      </main>
-  </div>
+  </main>
+  
+  <%- include('./layout/footer'); -%>
 
-  <!-- <%- include('./layout/footer'); -%> -->
-  <script src="https://cdn.ckeditor.com/ckeditor5/29.0.0/classic/ckeditor.js"></script>
   <script type="module" src="../main.js"></script>
 </body>
 

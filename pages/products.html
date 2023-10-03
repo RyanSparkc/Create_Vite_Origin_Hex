@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <%- include('./layout/meta') -%>
+  <%- include('./layout/font') -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+  <main class="bg-black products pt-17 pt-lg-20">
+    <ul class="nav nav-pills py-4 justify-content-center gap-2 gap-lg-6" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="btn btn-white font-shrikhand rounded-pill px-4 px-lg-20 py-1 fs-lg-6 active" id="pills-Diane-tab"
+          data-bs-toggle="pill" data-bs-target="#pills-Diane" type="button" role="tab" aria-controls="pills-Diane"
+          aria-selected="true">Diane</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="btn btn-outline-white font-shrikhand rounded-pill px-4 px-lg-20 py-1 fs-lg-6" id="pills-Felix-tab"
+          data-bs-toggle="pill" data-bs-target="#pills-Felix" type="button" role="tab" aria-controls="pills-Felix"
+          aria-selected="false">Felix</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="btn btn-outline-white font-shrikhand rounded-pill px-4 px-lg-20 py-1 fs-lg-6" id="pills-Karina-tab"
+          data-bs-toggle="pill" data-bs-target="#pills-Karina" type="button" role="tab" aria-controls="pills-Karina"
+          aria-selected="false">Karina</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="btn btn-outline-white font-shrikhand rounded-pill px-4 px-lg-20 py-1 fs-lg-6" id="pills-Vito-tab"
+          data-bs-toggle="pill" data-bs-target="#pills-Vito" type="button" role="tab" aria-controls="pills-Vito"
+          aria-selected="false">Vito</button>
+      </li>
+    </ul>
+  
+    <div class="tab-content text-white" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-Diane" role="tabpanel" aria-labelledby="pills-Diane-tab"
+        tabindex="0">
+        <div class="row g-0">
+          <div class="col-lg-6">
+            <div class="swiper sw-products">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="../assets/images/diane_square1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../assets/images/diane_square2.png" alt="">
+                </div>
+              </div>
+  
+              <div class="swiper-button-prev">
+                <img src="/assets/images/arrow_circle_left.svg" alt="arrow_circle_left" />
+              </div>
+              <div class="swiper-button-next">
+                <img class="" style="transform: rotate(180deg);" src="/assets/images/arrow_circle_left.svg"
+                  alt="arrow_circle_right" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 align-self-center">
+            <div class="py-4 py-lg-0 px-3 px-lg-10 text-white d-flex flex-column justify-content-center h-100">
+              <p class="fs-10 fs-lg-16 mb-lg-6 font-shrikhand">Diane</p>
+              <p class="mb-0">知識型</p>
+              <p class="mb-4">學術領導/知識分享/智能問答</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
+                <path
+                  d="M283.55 13.8938L290.485 8.24316H0.0498047V6.3596H290.485L283.55 0.708916L305.825 7.30138L283.55 13.8938Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-Felix" role="tabpanel" aria-labelledby="pills-Felix-tab" tabindex="0">
+        <div class="row g-0">
+          <div class="col-lg-6">
+           
+          </div>
+          <div class="col-lg-6 align-self-center">
+            <div class="py-4 py-lg-0 px-3 px-lg-10 text-white d-flex flex-column justify-content-center h-100">
+              <p class="fs-10 fs-lg-16 mb-lg-6 font-shrikhand">Felix</p>
+              <p class="mb-0">娛樂型</p>
+              <p class="mb-4">音樂播放/語音互動/遊戲陪伴 </p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
+                <path
+                  d="M283.55 13.8938L290.485 8.24316H0.0498047V6.3596H290.485L283.55 0.708916L305.825 7.30138L283.55 13.8938Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-Karina" role="tabpanel" aria-labelledby="pills-Karina-tab" tabindex="0">
+        <div class="row g-0">
+          <div class="col-lg-6">
+            
+          </div>
+          <div class="col-lg-6 align-self-center">
+            <div class="py-4 py-lg-0 px-3 px-lg-10 text-white d-flex flex-column justify-content-center h-100">
+              <p class="fs-10 fs-lg-16 mb-lg-6 font-shrikhand">Karina</p>
+              <p class="mb-0">生活型</p>
+              <p class="mb-4">健康提醒/日程安排/智能家居</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
+                <path
+                  d="M283.55 13.8938L290.485 8.24316H0.0498047V6.3596H290.485L283.55 0.708916L305.825 7.30138L283.55 13.8938Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-Vito" role="tabpanel" aria-labelledby="pills-Vito-tab" tabindex="0">
+        <div class="row g-0">
+          <div class="col-lg-6">
+           
+          </div>
+          <div class="col-lg-6 align-self-center">
+            <div class="py-4 py-lg-0 px-3 px-lg-10 text-white d-flex flex-column justify-content-center h-100">
+              <p class="fs-10 fs-lg-16 mb-lg-6 font-shrikhand">Vito</p>
+              <p class="mb-0">情感型</p>
+              <p class="mb-4">情感識別/心情分析/心靈支持</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="306" height="14" viewBox="0 0 306 14" fill="none">
+                <path
+                  d="M283.55 13.8938L290.485 8.24316H0.0498047V6.3596H290.485L283.55 0.708916L305.825 7.30138L283.55 13.8938Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+  <script type="module" src="../assets/js/index.js"></script>
+</body>
+
+</html>

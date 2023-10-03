@@ -1,4 +1,55 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar-bg {
+  @include gradient-y($primary, $primary-700);
+  @include media-breakpoint-up(lg) {
+    background-image: none;
+  }
+}
+
+.navbar {
+  &-custom {
+    top: 68px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    @include media-breakpoint-up(lg) {
+      top: 0;
+    }
+    .navbar-collapse {
+      @include media-breakpoint-up(lg) {
+        border-bottom: 0;
+      }
+    }
+  }
+  .navbar-toggler {
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    .icon-custom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 33px;
+      height: 22px;
+      .icon-line {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #ffffff;
+      }
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.navbar-border {
+  z-index: 6;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.0256);
+  height: 1px;
+  top: 68px;
+  @include media-breakpoint-up(lg) {
+    top: 80px;
+  }
 }

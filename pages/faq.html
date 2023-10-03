@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <%- include('./layout/meta') -%>
+    <%- include('./layout/font') -%>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+
+  <main class="bg-primary-100 pt-32 pt-32 pt-lg-36 pb-20 pb-lg-30 min-vh-100 text-primary-600">
+    <div class="container">
+      <div class="row">
+        <h2 class="fs-10 fs-md-12 fw-bold letter-s40 letter-lg-s48 pb-10 pb-lg-16 border-white border-bottom border-bottom-dotted border-2">FAQ</h2>
+        <div class="col-md-4 mt-6 mt-lg-10">
+          <div class="list-group bg-transparent" id="list-tab" role="tablist">
+            <a class="list-group-item mb-4 list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home"
+              role="tab" aria-controls="list-home">Template 使用問題</a>
+            <a class="list-group-item mb-4 list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile"
+              role="tab" aria-controls="list-profile">訂購與運送</a>
+            <a class="list-group-item mb-4 list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages"
+              role="tab" aria-controls="list-messages">產品保養與維修</a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item border-2 border-bottom border-top-0 border-start-0 border-end-0 border-bottom-dotted border-white pb-6 pb-lg-10">
+                  <h2 class="accordion-header fw-bold pt-6 pt-lg-10">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
+                      Template 的使用方式是什麼？
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item border-2 border-bottom border-top-0 border-start-0 border-end-0 border-bottom-dotted border-white pb-6 pb-lg-10">
+                  <h2 class="accordion-header fw-bold pt-6 pt-lg-10">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      Template 需要什麼樣的環境來使用？
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item border-2 border-bottom border-top-0 border-start-0 border-end-0 border-bottom-dotted border-white pb-6 pb-lg-10">
+                  <h2 class="accordion-header fw-bold pt-6 pt-lg-10">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Template 支援哪些語言？
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item border-2 border-bottom border-top-0 border-start-0 border-end-0 border-bottom-dotted border-white pb-6 pb-lg-10">
+                  <h2 class="accordion-header fw-bold pt-6 pt-lg-10">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+                      aria-expanded="false" aria-controls="collapse4">
+                      Template 的軟體更新方式為何？
+                    </button>
+                  </h2>
+                  <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item border-2 border-bottom border-top-0 border-start-0 border-end-0 border-bottom-dotted border-white pb-6 pb-lg-10">
+                  <h2 class="accordion-header fw-bold pt-6 pt-lg-10">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+                      aria-expanded="false" aria-controls="collapse5">
+                      購買 Template 後的售後服務如何？
+                    </button>
+                  </h2>
+                  <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item border-2 border-bottom border-top-0 border-start-0 border-end-0 border-bottom-dotted border-white pb-6 pb-lg-10">
+                  <h2 class="accordion-header fw-bold pt-6 pt-lg-10">
+                    <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+                      aria-expanded="false" aria-controls="collapse6">
+                      Template 與其他智能家居設備的相容性如何？
+                    </button>
+                  </h2>
+                  <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      首先請確保機器人已安裝並連接至Wi-Fi，然後使用專屬的應用程式進行設定。隨後即可透過語音指令或應用程式與機器人進行互動。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </main>
+  <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+</body>
+
+</html>

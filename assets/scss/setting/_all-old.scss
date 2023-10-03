@@ -1,0 +1,165 @@
+// 1. 首先包含功能函數（這樣你可以操作顏色、SVG、計算等）
+@import "../../node_modules/bootstrap/scss/functions";
+
+//set 1-1 在此包含任何默認變量覆蓋
+// $primary: #521945;
+// $secondary: #912F56;
+
+
+// ! 自定義顏色、間距設定
+// @import "helpers/variables-m";
+
+// 2. 包含所需的 Bootstrap 樣式表的其餘部分（包括任何單獨的顏色模式樣式表）
+// @import '../../node_modules/bootstrap/scss/variables';
+// @import '../../node_modules/bootstrap/scss/variables-dark';
+@import "helpers/variables";
+@import "helpers/variables-dark";
+
+// 3 .必備工具部分
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// 4. 自訂義工具位置
+@import '../../node_modules/bootstrap/scss/utilities';
+// ! 設定工具地方
+@import "helpers/utilities-m";
+// @import "helpers/utilities";
+
+//set  引入bs5 預設顏色群組
+// $all-colors: map-merge-multiple($blues, $indigos, $purples, $pinks, $reds, $oranges, $yellows, $greens, $teals, $cyans);
+$all-colors: map-merge-multiple($purples);
+
+// 移除主題色設定
+// $theme-colors: map-remove($theme-colors, "info", "light", "dark");
+
+//set 自定義 utilities
+$utilities: map-merge($utilities,
+    ("width": map-merge(map-get($utilities, "width"),
+        (responsive: true,
+          values: map-merge(map-get(map-get($utilities, "width"), "values"),
+            ("1px": 1px,
+              "2px": 2px,
+              "3px": 3px,
+              "4px": 5px,
+              "50px": 50px,
+              "100px":100px,
+              "5" : 5%,
+              "10" : 10%,
+              "15" : 15%,
+              "20" : 20%,
+              "30" : 30%,
+              "35" : 35%,
+              "40" : 40%,
+              "45" : 45%,
+              "55" : 55%,
+              "60" : 60%,
+              "65" : 65%,
+              "70" : 70%,
+              "80" : 80%,
+              "85" : 85%,
+              "90" : 90%,
+              "95" : 95%,
+            )),
+        )),
+      "height": map-merge(map-get($utilities, "height"),
+        (responsive: true,
+          values: map-merge(map-get(map-get($utilities, "height"), "values"),
+            (
+              "auto": auto,
+              "0":0,
+              "80px": 80px,
+            )),
+        )),
+      "color": map-merge(map-get($utilities, "color"),
+        (responsive: true,
+          values: map-merge(map-get(map-get($utilities, "color"), "values"),
+            ("word": #776e72,
+              "black-50": rgba($black, .5), 
+              "black-70": rgba($black, .7), 
+              "white-50": rgba($white, .5),
+              "white-70": rgba($white, .7), 
+              "reset": inherit,
+            )),
+        )),
+      // "color": map-merge(
+      //   map-get($utilities, "color"),
+      //   (
+      //     values: map-merge(
+      //       map-get(map-get($utilities, "color"), "values"),
+      //       (
+      //         $all-colors // 載入上方 map-merge-multiple() 預設顏色層級 100~900 39行
+      //       ),
+      //     ),
+      //   ),
+      // ),
+    ));
+
+// 5. Layout & components
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+
+@import "../../node_modules/bootstrap/scss/type";
+
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/accordion";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/offcanvas";
+@import "../../node_modules/bootstrap/scss/placeholders";
+
+// Helpers
+@import "../../node_modules/bootstrap/scss/helpers";
+
+// api 最後選擇性地包含實用程序 API，根據 _utilities.scss 中的 Sass 映射生成類
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// 6. 自訂義位置 ===========================================================
+//~ base -
+@import 'base/base.scss';
+// mixins -
+@import 'mixins/mixin';
+
+// helper -
+@import 'utils/tools';
+
+// config -
+@import 'config/font-size';
+
+// components
+@import 'components/navbar-top';
+@import 'components/button';
+@import 'components/pagination';
+
+// plugins 
+@import 'plugins/swiper';
+
+// layout -
+@import 'layout/header';
+@import 'layout/footer';
+
+// pages -
+@import 'pages/index.scss';
+
+

@@ -1,5 +1,66 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// ! 載入套件 調整 0
+// 載入 套件
+@import 'aos/dist/aos';
+@import 'swiper/css/bundle';
+
+// 1. 首先包含功能函數（這樣你可以操作顏色、SVG、計算等）
+@import "../../node_modules/bootstrap/scss/functions";
+
+// ! 自定義顏色、間距設定 調整 2
+@import "helpers/variables-modify";
+// @import "helpers/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+// ! 覆蓋主題色 調整 1 
+@import "helpers/custom-theme";
+
+// 3 .必備工具部分
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// 4. 自訂義工具位置
+@import '../../node_modules/bootstrap/scss/utilities';
+
+// ! 設定工具地方 調整 3
+@import "helpers/utilities-m";
+// @import "helpers/utilities";
+
+//set  引入bs5 預設顏色群組設定
+@import "helpers/set-color-group";
+
+// 5. BS5 個別元件載入方式 - Layout & components 
+@import "helpers/bootstrap-custom";
+
+// 6. 自訂義位置 ===========================================================
+// base -
+@import 'base/base.scss';
+
+// mixins -
+@import 'mixins/mixin';
+
+// utils -
+@import 'utils/tools';
+@import 'utils/animate';
+@import 'utils/font-family';
+// @import 'utils/font-size-weight';
+
+// components
+@import 'components/button';
+@import 'components/pagination';
+@import 'components/card';
+@import 'components/modalScrollBar';
+
+// ! custom Plugins (修改套件) 4
+@import 'plugins/swiper';
+
+// layout -
+@import 'layout/header';
+@import 'layout/footer';
+
+// pages -
+@import 'pages/index.scss';
+@import 'pages/contactus';
+@import 'pages/register';
+@import 'pages/news';
+@import 'pages/about';
 
 
-@import './pages/index.scss';

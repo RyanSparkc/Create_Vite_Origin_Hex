@@ -1,3 +1,16 @@
-.index-title {
-  font-size: 100px;
+.index {
+  .banner {
+    background-image: url('../images/home_background.png');
+    background-size: cover;
+  }
+}
+
+.rotate-image {
+    width: 196px;
+    height: 196px;
+    animation: rotate infinite 60s linear;
+}
+
+.contact {
+    background-image: radial-gradient(50% 50% at 50% 50%,#28085C 0%,#000000 100%)
 }
